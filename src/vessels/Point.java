@@ -19,4 +19,8 @@ public class Point {
     public void setY(int y){
         this.y = y;
     }
+
+    public boolean isPointNearCurrent(Point point) {
+        return (Math.abs(point.x - this.getX()) <= 1) && Math.abs(point.y - this.getY()) <= 1;
+    }
 }
